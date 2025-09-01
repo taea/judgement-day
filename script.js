@@ -49,7 +49,7 @@ function updateDisplay() {
     const body = document.body;
     
     // Remove all background classes
-    body.classList.remove('bg-past', 'bg-urgent', 'bg-normal');
+    body.classList.remove('bg-past', 'bg-urgent', 'bg-warning', 'bg-normal');
     
     if (daysRemaining < 0) {
         titleText.textContent = 'あの日から';
@@ -61,11 +61,16 @@ function updateDisplay() {
         labelText.textContent = 'その日';
         daysCountElement.textContent = '0';
         body.classList.add('bg-urgent');
-    } else if (daysRemaining <= 10) {
+    } else if (daysRemaining <= 5) {
         titleText.textContent = 'あの日まで';
         labelText.textContent = 'あと';
         daysCountElement.textContent = daysRemaining;
         body.classList.add('bg-urgent');
+    } else if (daysRemaining <= 10) {
+        titleText.textContent = 'あの日まで';
+        labelText.textContent = 'あと';
+        daysCountElement.textContent = daysRemaining;
+        body.classList.add('bg-warning');
     } else {
         titleText.textContent = 'あの日まで';
         labelText.textContent = 'あと';
