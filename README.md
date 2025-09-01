@@ -1,6 +1,6 @@
 # 📅 Judgement Day
 
-- htta://taea.github.io/judgment-day
+- [htta://taea.github.io/judgment-day](https://taea.github.io/judgement-day/)
 - ユーザーが設定した「あの日」まで、あと何日かわかるだけのサイトです
 - それを見て、ワクワクしたり、焦ったり、しんみりしたりします
 - 設定した日付はローカルストレージに保存されるので、同じブラウザなら何度でも見に行けます
