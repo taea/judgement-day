@@ -46,19 +46,31 @@ function updateDisplay() {
     }
     
     const daysRemaining = calculateDaysRemaining(targetDate);
+    const body = document.body;
+    
+    // Remove all background classes
+    body.classList.remove('bg-past', 'bg-urgent', 'bg-normal');
     
     if (daysRemaining < 0) {
         titleText.textContent = 'あの日から';
         labelText.textContent = 'もう';
         daysCountElement.textContent = Math.abs(daysRemaining);
+        body.classList.add('bg-past');
     } else if (daysRemaining === 0) {
         titleText.textContent = '今日が';
         labelText.textContent = 'その日';
         daysCountElement.textContent = '0';
+        body.classList.add('bg-urgent');
+    } else if (daysRemaining <= 10) {
+        titleText.textContent = 'あの日まで';
+        labelText.textContent = 'あと';
+        daysCountElement.textContent = daysRemaining;
+        body.classList.add('bg-urgent');
     } else {
         titleText.textContent = 'あの日まで';
         labelText.textContent = 'あと';
         daysCountElement.textContent = daysRemaining;
+        body.classList.add('bg-normal');
     }
     
     saveDate(targetDate);

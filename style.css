@@ -13,6 +13,19 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 20px;
+    transition: background 0.5s ease;
+}
+
+body.bg-normal {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.bg-past {
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+}
+
+body.bg-urgent {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
 }
 
 .container {
