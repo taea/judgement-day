@@ -33,7 +33,7 @@ h1 {
     width: 100%;
     max-width: 300px;
     padding: 15px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -76,7 +76,7 @@ h1 {
 }
 
 #days-count {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     line-height: 1;
@@ -103,7 +103,7 @@ h1 {
     }
     
     #target-date {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 12px;
     }
     
@@ -112,7 +112,7 @@ h1 {
     }
     
     #days-count {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     
     .unit {
