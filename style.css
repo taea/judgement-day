@@ -114,29 +114,3 @@ h1 {
     }
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    #target-date {
-        font-size: 1.6rem;
-        padding: 12px;
-    }
-    
-    #label-text {
-        font-size: 1.3rem;
-    }
-    
-    #days-count {
-        font-size: 6rem;
-    }
-    
-    .unit {
-        font-size: 1.5rem;
-    }
-    
-    .container {
-        padding: 30px 15px;
-    }
-}
